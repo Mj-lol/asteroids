@@ -1,11 +1,68 @@
 [
     {
+        "label": "CircleShape",
+        "importPath": "circleshape",
+        "description": "circleshape",
+        "isExtraImport": true,
+        "detail": "circleshape",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "circleshape",
+        "description": "circleshape",
+        "isExtraImport": true,
+        "detail": "circleshape",
+        "documentation": {}
+    },
+    {
         "label": "pygame",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "pygame",
         "description": "pygame",
         "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "asteroids",
+        "description": "asteroids",
+        "isExtraImport": true,
+        "detail": "asteroids",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "asteroids",
+        "description": "asteroids",
+        "isExtraImport": true,
+        "detail": "asteroids",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "constants",
+        "description": "constants",
+        "isExtraImport": true,
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "constants",
+        "description": "constants",
+        "isExtraImport": true,
+        "detail": "constants",
         "documentation": {}
     },
     {
@@ -25,6 +82,32 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "asteroidfield",
+        "description": "asteroidfield",
+        "isExtraImport": true,
+        "detail": "asteroidfield",
+        "documentation": {}
+    },
+    {
+        "label": "Asteroid",
+        "kind": 6,
+        "importPath": "asteroids",
+        "description": "asteroids",
+        "peekOfCode": "class Asteroid(CircleShape):\n    def __init__(self, x, y, radius):\n        self.x = x\n        self.y=y\n        self.radius=radius\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"white\", (self.x,self.y),self.radius, 2)\n    def update(self, dt):\n        self.x, self.y += (self.velocity*dt)",
+        "detail": "asteroids",
+        "documentation": {}
+    },
+    {
+        "label": "AsteroidField",
+        "kind": 6,
+        "importPath": "astroidfield",
+        "description": "astroidfield",
+        "peekOfCode": "class AsteroidField(pygame.sprite.Sprite):\n    edges = [\n        [\n            pygame.Vector2(1, 0),\n            lambda y: pygame.Vector2(-ASTEROID_MAX_RADIUS, y * SCREEN_HEIGHT),\n        ],\n        [\n            pygame.Vector2(-1, 0),\n            lambda y: pygame.Vector2(\n                SCREEN_WIDTH + ASTEROID_MAX_RADIUS, y * SCREEN_HEIGHT",
+        "detail": "astroidfield",
+        "documentation": {}
+    },
+    {
         "label": "CircleShape",
         "kind": 6,
         "importPath": "circleshape",
@@ -38,7 +121,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "SCREEN_WIDTH = 1280\nSCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20",
+        "peekOfCode": "SCREEN_WIDTH = 1280\nSCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -47,7 +130,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "SCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20",
+        "peekOfCode": "SCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -56,7 +139,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20",
+        "peekOfCode": "ASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -65,7 +148,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20",
+        "peekOfCode": "ASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -74,7 +157,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20",
+        "peekOfCode": "ASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -83,7 +166,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20",
+        "peekOfCode": "ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -92,7 +175,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "PLAYER_RADIUS = 20",
+        "peekOfCode": "PLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
         "detail": "constants",
         "documentation": {}
     },
@@ -101,7 +184,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    pygame.init()\n    clock = pygame.time.Clock()\n    dt = 0\n    Player()\n    print(f\"Starting asteroids!\")\n    print(f\"Screen width: {SCREEN_WIDTH}\")\n    print(f\"Screen height: {SCREEN_HEIGHT}\")\n    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\n    while True:",
+        "peekOfCode": "def main():\n    pygame.init()\n    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\n    clock = pygame.time.Clock()\n    updatable = pygame.sprite.Group()\n    drawable = pygame.sprite.Group()\n    asteroids = pygame.sprite.Group()\n    Player.containers = (updatable, drawable)\n    Asteroid.containers = (asteroids, updatable, drawable)\n    AsteroidField.containers = (updatable)",
         "detail": "main",
         "documentation": {}
     },
@@ -110,7 +193,7 @@
         "kind": 6,
         "importPath": "player",
         "description": "player",
-        "peekOfCode": "class Player(CircleShape):\n    def __init__(self, x, y):\n        CircleShape.__init__(PLAYER_RADIUS)\n        self.rotation=0\n    # in the player class\n    def triangle(self):\n        forward = pygame.Vector2(0, 1).rotate(self.rotation)\n        right = pygame.Vector2(0, 1).rotate(self.rotation + 90) * self.radius / 1.5\n        a = self.position + forward * self.radius\n        b = self.position - forward * self.radius - right",
+        "peekOfCode": "class Player(CircleShape):\n    def __init__(self, x, y):\n        super().__init__(x,y,PLAYER_RADIUS)\n        self.rotation=0\n    # in the player class\n    def triangle(self):\n        forward = pygame.Vector2(0, 1).rotate(self.rotation)\n        right = pygame.Vector2(0, 1).rotate(self.rotation + 90) * self.radius / 1.5\n        a = self.position + forward * self.radius\n        b = self.position - forward * self.radius - right",
         "detail": "player",
         "documentation": {}
     }
