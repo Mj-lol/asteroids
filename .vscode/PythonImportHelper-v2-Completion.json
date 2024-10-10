@@ -286,7 +286,7 @@
         "kind": 6,
         "importPath": "shot",
         "description": "shot",
-        "peekOfCode": "class Shot(CircleShape):\n    def __init__(self, x, y):\n        super().__init__(x, y, SHOT_RADIUS)\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"white\", self.position,self.radius, 2)\n    def update(self, dt):\n        self.position += self.velocity * dt",
+        "peekOfCode": "class Shot(CircleShape):\n    def __init__(self, x, y):\n        super().__init__(x, y, SHOT_RADIUS)\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"blue\", self.position,self.radius, 2)\n    def update(self, dt):\n        self.position += self.velocity * dt",
         "detail": "shot",
         "documentation": {}
     }

@@ -44,7 +44,7 @@ def main():
                     a.split()
                     s.kill()
 
-        screen.fill("black")
+        screen.fill("gray")
 
         for p in drawable:
             p.draw(screen)
