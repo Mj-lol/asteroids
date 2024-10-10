@@ -16,6 +16,14 @@
         "documentation": {}
     },
     {
+        "label": "CircleShape",
+        "importPath": "circleshape",
+        "description": "circleshape",
+        "isExtraImport": true,
+        "detail": "circleshape",
+        "documentation": {}
+    },
+    {
         "label": "pygame",
         "kind": 6,
         "isExtraImport": true,
@@ -74,6 +82,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "constants",
+        "description": "constants",
+        "isExtraImport": true,
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -96,6 +112,22 @@
         "description": "player",
         "isExtraImport": true,
         "detail": "player",
+        "documentation": {}
+    },
+    {
+        "label": "Shot",
+        "importPath": "shot",
+        "description": "shot",
+        "isExtraImport": true,
+        "detail": "shot",
+        "documentation": {}
+    },
+    {
+        "label": "Shot",
+        "importPath": "shot",
+        "description": "shot",
+        "isExtraImport": true,
+        "detail": "shot",
         "documentation": {}
     },
     {
@@ -130,7 +162,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "SCREEN_WIDTH = 1280\nSCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "SCREEN_WIDTH = 1280\nSCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5",
         "detail": "constants",
         "documentation": {}
     },
@@ -139,7 +171,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "SCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "SCREEN_HEIGHT = 720\nASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
         "detail": "constants",
         "documentation": {}
     },
@@ -148,7 +180,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "ASTEROID_MIN_RADIUS = 20\nASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
         "detail": "constants",
         "documentation": {}
     },
@@ -157,7 +189,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "ASTEROID_KINDS = 3\nASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
         "detail": "constants",
         "documentation": {}
     },
@@ -166,7 +198,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "ASTEROID_SPAWN_RATE = 0.8  # seconds\nASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
         "detail": "constants",
         "documentation": {}
     },
@@ -175,7 +207,7 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS\nPLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
         "detail": "constants",
         "documentation": {}
     },
@@ -184,7 +216,25 @@
         "kind": 5,
         "importPath": "constants",
         "description": "constants",
-        "peekOfCode": "PLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200",
+        "peekOfCode": "PLAYER_RADIUS = 20\nPLAYER_TURN_SPEED=300\nPLAYER_SPEED=200\nSHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "SHOT_RADIUS",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "SHOT_RADIUS = 5\nPLAYER_SHOOT_SPEED = 500",
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "PLAYER_SHOOT_SPEED",
+        "kind": 5,
+        "importPath": "constants",
+        "description": "constants",
+        "peekOfCode": "PLAYER_SHOOT_SPEED = 500",
         "detail": "constants",
         "documentation": {}
     },
@@ -193,7 +243,7 @@
         "kind": 2,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "def main():\n    pygame.init()\n    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\n    clock = pygame.time.Clock()\n    updatable = pygame.sprite.Group()\n    drawable = pygame.sprite.Group()\n    asteroids = pygame.sprite.Group()\n    Player.containers = (updatable, drawable)\n    Asteroid.containers = (asteroids, updatable, drawable)\n    AsteroidField.containers = (updatable)",
+        "peekOfCode": "def main():\n    pygame.init()\n    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\n    clock = pygame.time.Clock()\n    updatable = pygame.sprite.Group()\n    drawable = pygame.sprite.Group()\n    asteroids = pygame.sprite.Group()\n    shots = pygame.sprite.Group()\n    Player.containers = (updatable, drawable)\n    Asteroid.containers = (asteroids, updatable, drawable)",
         "detail": "main",
         "documentation": {}
     },
@@ -204,6 +254,15 @@
         "description": "player",
         "peekOfCode": "class Player(CircleShape):\n    def __init__(self, x, y):\n        super().__init__(x,y,PLAYER_RADIUS)\n        self.rotation=0\n    # in the player class\n    def triangle(self):\n        forward = pygame.Vector2(0, 1).rotate(self.rotation)\n        right = pygame.Vector2(0, 1).rotate(self.rotation + 90) * self.radius / 1.5\n        a = self.position + forward * self.radius\n        b = self.position - forward * self.radius - right",
         "detail": "player",
+        "documentation": {}
+    },
+    {
+        "label": "Shot",
+        "kind": 6,
+        "importPath": "shot",
+        "description": "shot",
+        "peekOfCode": "class Shot(CircleShape):\n    def __init__(self, x, y):\n        super().__init__(x, y, SHOT_RADIUS)\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"white\", self.position,self.radius, 2)\n    def update(self, dt):\n        self.position += self.velocity * dt",
+        "detail": "shot",
         "documentation": {}
     }
 ]
