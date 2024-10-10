@@ -2,8 +2,9 @@
 # the open-source pygame library
 # throughout this file
 import pygame
-from asteroids import *
-from astroidfield import AsteroidField
+import sys
+from asteroid import *
+from asteroidfield import *
 from constants import *
 from player import *
 
@@ -31,7 +32,10 @@ def main():
                 return
         for p in updatable:
             p.update(dt)
-
+        for a in asteroids:
+           if a.collide(p):
+                print("Game over!")
+                sys.exit()
         screen.fill("black")
 
         for p in drawable:
