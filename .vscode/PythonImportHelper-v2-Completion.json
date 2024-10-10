@@ -74,6 +74,14 @@
         "documentation": {}
     },
     {
+        "label": "AsteroidField",
+        "importPath": "astroidfield",
+        "description": "astroidfield",
+        "isExtraImport": true,
+        "detail": "astroidfield",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "player",
         "description": "player",
@@ -82,19 +90,11 @@
         "documentation": {}
     },
     {
-        "label": "*",
-        "importPath": "asteroidfield",
-        "description": "asteroidfield",
-        "isExtraImport": true,
-        "detail": "asteroidfield",
-        "documentation": {}
-    },
-    {
         "label": "Asteroid",
         "kind": 6,
         "importPath": "asteroids",
         "description": "asteroids",
-        "peekOfCode": "class Asteroid(CircleShape):\n    def __init__(self, x, y, radius):\n        self.x = x\n        self.y=y\n        self.radius=radius\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"white\", (self.x,self.y),self.radius, 2)\n    def update(self, dt):\n        self.x, self.y += (self.velocity*dt)",
+        "peekOfCode": "class Asteroid(CircleShape):\n    def __init__(self, x, y, radius):\n        super().__init__(x, y, radius)\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"white\", self.position,self.radius, 2)\n    def update(self, dt):\n        self.position += self.velocity * dt",
         "detail": "asteroids",
         "documentation": {}
     },

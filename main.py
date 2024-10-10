@@ -2,10 +2,12 @@
 # the open-source pygame library
 # throughout this file
 import pygame
+from asteroids import *
+from astroidfield import AsteroidField
 from constants import *
 from player import *
-from asteroids import *
-from asteroidfield import *
+
+
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
@@ -18,6 +20,7 @@ def main():
     AsteroidField.containers = (updatable)
     dt = 0
     p=Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
+    f = AsteroidField()
     print(f"Starting asteroids!")
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
