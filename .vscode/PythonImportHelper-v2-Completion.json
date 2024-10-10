@@ -42,22 +42,6 @@
         "documentation": {}
     },
     {
-        "label": "*",
-        "importPath": "asteroid",
-        "description": "asteroid",
-        "isExtraImport": true,
-        "detail": "asteroid",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "asteroid",
-        "description": "asteroid",
-        "isExtraImport": true,
-        "detail": "asteroid",
-        "documentation": {}
-    },
-    {
         "label": "constants",
         "kind": 6,
         "isExtraImport": true,
@@ -67,7 +51,15 @@
         "documentation": {}
     },
     {
-        "label": "*",
+        "label": "ASTEROID_KINDS",
+        "importPath": "constants",
+        "description": "constants",
+        "isExtraImport": true,
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "ASTEROID_MIN_RADIUS",
         "importPath": "constants",
         "description": "constants",
         "isExtraImport": true,
@@ -96,6 +88,30 @@
         "description": "constants",
         "isExtraImport": true,
         "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "constants",
+        "description": "constants",
+        "isExtraImport": true,
+        "detail": "constants",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "asteroid",
+        "description": "asteroid",
+        "isExtraImport": true,
+        "detail": "asteroid",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "asteroid",
+        "description": "asteroid",
+        "isExtraImport": true,
+        "detail": "asteroid",
         "documentation": {}
     },
     {
@@ -144,7 +160,7 @@
         "kind": 6,
         "importPath": "asteroid",
         "description": "asteroid",
-        "peekOfCode": "class Asteroid(CircleShape):\n    def __init__(self, x, y, radius):\n        super().__init__(x, y, radius)\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"white\", self.position,self.radius, 2)\n    def update(self, dt):\n        self.position += self.velocity * dt",
+        "peekOfCode": "class Asteroid(CircleShape):\n    def __init__(self, x, y, radius):\n        super().__init__(x, y, radius)\n    def draw(self, screen):\n        pygame.draw.circle(screen, \"red\", self.position,self.radius, 2)\n    def update(self, dt):\n        self.position += self.velocity * dt\n    def split(self):\n        self.kill()\n        if self.radius <= ASTEROID_MIN_RADIUS:",
         "detail": "asteroid",
         "documentation": {}
     },
